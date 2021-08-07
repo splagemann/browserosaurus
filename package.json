@@ -1,6 +1,6 @@
 {
   "name": "browserosaurus",
-  "version": "15.1.3-beta.21",
+  "version": "15.1.3-beta.22",
   "description": "The browser prompter for macOS",
   "keywords": [
     "macOS",
@@ -21,14 +21,14 @@
     "lint": "eslint . --ignore-path .gitignore",
     "list-apps": "ts-node ./scripts/listInstalledApps",
     "make": "concurrently \"npm:make:*\" --kill-others-on-fail",
-    "make:arm": "electron-forge make --skip-package --arch=arm64",
-    "make:intel": "electron-forge make --skip-package --arch=x64",
+    "make:arm": "electron-forge make --arch=arm64",
+    "make:intel": "electron-forge make --arch=x64",
     "notarize": "ts-node ./scripts/notarize.ts",
     "prepackage": "rimraf out",
     "package": "npm run package:arm && npm run package:intel",
     "package:arm": "NODE_ENV=production electron-forge package --platform=darwin --arch=arm64",
     "package:intel": "NODE_ENV=production electron-forge package --platform=darwin --arch=x64",
-    "release": "bump --commit && npm run doctor && npm run package && npm run notarize && npm run make",
+    "release": "bump --commit && npm run doctor && npm run make:arm && npm run make:intel",
     "start": "ELECTRON_DISABLE_SECURITY_WARNINGS=true TAILWIND_MODE=watch electron-forge start",
     "test": "jest",
     "typecheck": "tsc --noEmit --skipLibCheck",
@@ -55,6 +55,10 @@
           "hardened-runtime": true,
           "entitlements": "config/entitlements.mac.plist",
           "entitlements-inherit": "config/entitlements.mac.plist"
+        },
+        "osxNotarize": {
+          "keychain": "~/Library/Keychains/login.keychain-db",
+          "keychainProfile": "AC_PASSWORD"
         },
         "icon": "src/shared/static/icon/icon.icns",
         "protocols": [
