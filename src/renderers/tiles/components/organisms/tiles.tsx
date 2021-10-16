@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { useFavTile, useNormalTiles } from '../../../../shared/state/hooks'
-import Tile from '../molecules/tile'
+import { useFavTile, useNormalTiles } from '../../../../shared/state/hooks.js'
+import Tile from '../molecules/tile.js'
 
 const Tiles: React.FC = () => {
   const favTile = useFavTile()

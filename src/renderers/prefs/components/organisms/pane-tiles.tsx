@@ -2,21 +2,21 @@ import clsx from 'clsx'
 import React from 'react'
 import { useDispatch } from 'react-redux'
 
-import { apps } from '../../../../config/apps'
+import { apps } from '../../../../config/apps.js'
 import {
   changedHotkey,
   clickedEyeButton,
   clickedFavButton,
-} from '../../../../shared/state/actions'
-import { useInstalledApps } from '../../../../shared/state/hooks'
-import Button from '../../../shared/components/atoms/button'
+} from '../../../../shared/state/actions.js'
+import { useInstalledApps } from '../../../../shared/state/hooks.js'
+import Button from '../../../shared/components/atoms/button.js'
 import {
   EyeIcon,
   EyeOffIcon,
   StarIcon,
-} from '../../../shared/components/atoms/icons'
-import Input from '../../../shared/components/atoms/input'
-import { Pane } from '../molecules/pane'
+} from '../../../shared/components/atoms/icons.js'
+import Input from '../../../shared/components/atoms/input.js'
+import { Pane } from '../molecules/pane.js'
 
 export function AppsPane(): JSX.Element {
   const dispatch = useDispatch()

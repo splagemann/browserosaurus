@@ -1,6 +1,6 @@
 import type { AppId } from '../../config/apps'
 import type { Hotkeys } from '../state/reducer.storage'
-import { getHotkeyByAppId } from './get-hotkey-by-app-id'
+import { getHotkeyByAppId } from './get-hotkey-by-app-id.js'
 
 const cases: [Hotkeys, AppId, ReturnType<typeof getHotkeyByAppId>][] = [
   // Does not exist

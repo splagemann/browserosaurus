@@ -2,7 +2,7 @@ import type { AnyAction, Middleware } from '@reduxjs/toolkit'
 
 import type { Channel } from '../../../shared/state/channels'
 import type { RootState } from '../../../shared/state/reducer.root'
-import { customWindow } from '../custom.window'
+import { customWindow } from '../custom.window.js'
 
 /**
  * Pass actions between main and renderers

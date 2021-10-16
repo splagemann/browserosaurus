@@ -1,8 +1,8 @@
 import React from 'react'
 import { Provider } from 'react-redux'
 
-import store from '../store'
-import Layout from './layout'
+import store from '../store.js'
+import Layout from './layout.js'
 
 const Bootstrap = (): JSX.Element => {
   return (

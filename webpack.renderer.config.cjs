@@ -1,6 +1,7 @@
 const rules = require('./webpack.rules.cjs')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
+const ResolveTypeScriptPlugin = require('resolve-typescript-plugin').default
 
 rules.push(
   {
@@ -26,6 +27,7 @@ module.exports = {
     }),
   ],
   resolve: {
-    extensions: ['.js', '.ts', '.jsx', '.tsx', '.css'],
+    extensions: ['.js', '.jsx', '.css'],
+    plugins: [new ResolveTypeScriptPlugin()],
   },
 }

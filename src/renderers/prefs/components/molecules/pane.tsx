@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import React from 'react'
 
-import { useSelector } from '../../../../shared/state/hooks'
+import { useSelector } from '../../../../shared/state/hooks.js'
 import type { PrefsTab } from '../../../../shared/state/reducer.data'
 
 interface Props {

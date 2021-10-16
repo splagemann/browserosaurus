@@ -1,4 +1,4 @@
-import { backspaceUrlParse } from './backspace-url-parse'
+import { backspaceUrlParse } from './backspace-url-parse.js'
 
 const cases: [string, string][] = [
   // Kitchen sink

@@ -2,12 +2,12 @@ import clsx from 'clsx'
 import React from 'react'
 import { useDispatch } from 'react-redux'
 
-import { clickedTile } from '../../../../shared/state/actions'
+import { clickedTile } from '../../../../shared/state/actions.js'
 import type { InstalledApp } from '../../../../shared/state/hooks'
-import { useSelector } from '../../../../shared/state/hooks'
-import { StarIcon } from '../../../shared/components/atoms/icons'
-import AppLogo from '../atoms/app-logo'
-import Kbd from '../atoms/kbd'
+import { useSelector } from '../../../../shared/state/hooks.js'
+import { StarIcon } from '../../../shared/components/atoms/icons.js'
+import AppLogo from '../atoms/app-logo.js'
+import Kbd from '../atoms/kbd.js'
 
 interface Props {
   app: InstalledApp

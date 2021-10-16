@@ -3,8 +3,8 @@ import type { TypedUseSelectorHook } from 'react-redux'
 import { shallowEqual, useSelector as useReduxSelector } from 'react-redux'
 
 import type { AppId, Apps } from '../../config/apps'
-import { apps as allApps } from '../../config/apps'
-import { getHotkeyByAppId } from '../utils/get-hotkey-by-app-id'
+import { apps as allApps } from '../../config/apps.js'
+import { getHotkeyByAppId } from '../utils/get-hotkey-by-app-id.js'
 import type { RootState } from './reducer.root'
 
 export const useSelector: TypedUseSelectorHook<RootState> = useReduxSelector

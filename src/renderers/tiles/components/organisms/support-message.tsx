@@ -5,8 +5,8 @@ import { useDispatch } from 'react-redux'
 import {
   clickedDonate,
   clickedMaybeLater,
-} from '../../../../shared/state/actions'
-import { useIsSupportMessageHidden } from '../../../../shared/state/hooks'
+} from '../../../../shared/state/actions.js'
+import { useIsSupportMessageHidden } from '../../../../shared/state/hooks.js'
 
 const SupportMessage = (): JSX.Element => {
   const dispatch = useDispatch()

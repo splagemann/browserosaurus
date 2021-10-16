@@ -2,8 +2,8 @@ import clsx from 'clsx'
 import React from 'react'
 import { useDispatch } from 'react-redux'
 
-import { clickedTabButton } from '../../../../shared/state/actions'
-import { useSelector } from '../../../../shared/state/hooks'
+import { clickedTabButton } from '../../../../shared/state/actions.js'
+import { useSelector } from '../../../../shared/state/hooks.js'
 
 interface Props {
   className?: string

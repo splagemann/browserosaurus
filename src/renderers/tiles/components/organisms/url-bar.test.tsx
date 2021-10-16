@@ -1,13 +1,13 @@
-import '../../../shared/preload'
+import '../../../shared/preload.js'
 
 import type { MatcherFunction } from '@testing-library/react'
 import { act, render, screen } from '@testing-library/react'
 import electron from 'electron'
 import React from 'react'
 
-import { urlOpened } from '../../../../shared/state/actions'
-import { Channel } from '../../../../shared/state/channels'
-import Wrapper from '../_bootstrap'
+import { urlOpened } from '../../../../shared/state/actions.js'
+import { Channel } from '../../../../shared/state/channels.js'
+import Wrapper from '../_bootstrap.js'
 
 const multiElementText =
   (text: string): MatcherFunction =>

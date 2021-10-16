@@ -4,9 +4,9 @@ import path from 'path'
 import {
   gotDefaultBrowserStatus,
   tWindowBoundsChanged,
-} from '../shared/state/actions'
-import { dispatch } from './state/store'
-import { storage } from './storage'
+} from '../shared/state/actions.js'
+import { dispatch } from './state/store.js'
+import { storage } from './storage.js'
 
 declare const TILES_WINDOW_WEBPACK_ENTRY: string
 declare const TILES_WINDOW_PRELOAD_WEBPACK_ENTRY: string

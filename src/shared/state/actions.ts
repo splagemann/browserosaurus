@@ -3,7 +3,7 @@ import { createAction as cA } from '@reduxjs/toolkit'
 import type { Rectangle } from 'electron/main'
 
 import type { AppId } from '../../config/apps'
-import { Channel } from './channels'
+import { Channel } from './channels.js'
 import type { Data, PrefsTab } from './reducer.data'
 import type { Storage } from './reducer.storage'
 

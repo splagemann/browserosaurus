@@ -2,7 +2,7 @@ import appExists from 'app-exists'
 import pFilter from 'p-filter'
 
 import type { AppId, Apps } from '../../config/apps'
-import { getKeys } from '../../shared/utils/get-keys'
+import { getKeys } from '../../shared/utils/get-keys.js'
 
 /**
  * Finds installed whitelisted apps.

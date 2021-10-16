@@ -1,7 +1,7 @@
 import { createReducer } from '@reduxjs/toolkit'
 
 import type { AppId } from '../../config/apps'
-import { syncAppIds } from './actions'
+import { syncAppIds } from './actions.js'
 
 export const defaultAppIds: AppId[] = []
 

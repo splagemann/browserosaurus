@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 
-import { prefsStarted } from '../../../shared/state/actions'
-import { HeaderBar } from './organisms/header-bar'
-import { AboutPane } from './organisms/pane-about'
-import { GeneralPane } from './organisms/pane-general'
-import { AppsPane } from './organisms/pane-tiles'
+import { prefsStarted } from '../../../shared/state/actions.js'
+import { HeaderBar } from './organisms/header-bar.js'
+import { AboutPane } from './organisms/pane-about.js'
+import { GeneralPane } from './organisms/pane-general.js'
+import { AppsPane } from './organisms/pane-tiles.js'
 
 const useAppStarted = () => {
   const dispatch = useDispatch()

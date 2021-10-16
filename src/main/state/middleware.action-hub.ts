@@ -6,9 +6,8 @@ import { app, autoUpdater, shell } from 'electron'
 import deepEqual from 'fast-deep-equal'
 import path from 'path'
 
-import package_ from '../../../package.json'
-import { apps } from '../../config/apps'
-import { B_URL, ISSUES_URL } from '../../config/CONSTANTS'
+import { apps } from '../../config/apps.js'
+import { B_URL, ISSUES_URL } from '../../config/CONSTANTS.js'
 import {
   appReady,
   clickedCopyButton,
@@ -77,12 +76,19 @@ export const actionHubMiddleware =
       // Hide from dock and cmd-tab
       app.dock.hide()
 
+      console.log(
+        'MOOOOOO',
+        `${app.getName()}/${app.getVersion()} (darwin: ${process.arch})`,
+      )
+
       // Auto update on production
       if (app.isPackaged) {
         autoUpdater.setFeedURL({
           url: getUpdateUrl(),
           headers: {
-            'User-Agent': `${package_.name}/${package_.version} (darwin: ${process.arch})`,
+            'User-Agent': `${app.getName()}/${app.getVersion()} (darwin: ${
+              process.arch
+            })`,
           },
         })
 

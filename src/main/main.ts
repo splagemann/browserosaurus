@@ -1,11 +1,11 @@
 import type { AnyAction } from '@reduxjs/toolkit'
 import electron, { app } from 'electron'
 
-import { appReady } from '../shared/state/actions'
-import { Channel } from '../shared/state/channels'
-import { dispatch } from './state/store'
-import { urlOpener } from './state/thunk.url-opener'
-import { storage } from './storage'
+import { appReady } from '../shared/state/actions.js'
+import { Channel } from '../shared/state/channels.js'
+import { dispatch } from './state/store.js'
+import { urlOpener } from './state/thunk.url-opener.js'
+import { storage } from './storage.js'
 
 // Attempt to fix this bug: https://github.com/electron/electron/issues/20944
 app.commandLine.appendArgument('--enable-features=Metal')

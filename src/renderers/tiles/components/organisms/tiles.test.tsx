@@ -1,4 +1,4 @@
-import '../../../shared/preload'
+import '../../../shared/preload.js'
 
 import { act, fireEvent, render, screen, within } from '@testing-library/react'
 import electron from 'electron'
@@ -10,9 +10,9 @@ import {
   syncAppIds,
   syncStorage,
   urlOpened,
-} from '../../../../shared/state/actions'
-import { Channel } from '../../../../shared/state/channels'
-import Wrapper from '../_bootstrap'
+} from '../../../../shared/state/actions.js'
+import { Channel } from '../../../../shared/state/channels.js'
+import Wrapper from '../_bootstrap.js'
 
 test('tiles', () => {
   render(<Wrapper />)

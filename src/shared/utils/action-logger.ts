@@ -3,7 +3,7 @@
 import type { AnyAction } from '@reduxjs/toolkit'
 import { blue, bold, magenta, white, yellow } from 'kolorist'
 
-import { Channel } from '../state/channels'
+import { Channel } from '../state/channels.js'
 
 const colorMap = {
   [Channel.MAIN]: yellow,

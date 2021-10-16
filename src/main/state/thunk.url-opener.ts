@@ -1,6 +1,6 @@
 import { sleep } from 'tings'
 
-import { urlOpened } from '../../shared/state/actions'
+import { urlOpened } from '../../shared/state/actions.js'
 import type { AppThunk } from '../../shared/state/reducer.root'
 
 export const urlOpener =

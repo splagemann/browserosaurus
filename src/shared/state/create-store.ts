@@ -6,9 +6,9 @@ import type {
 } from '@reduxjs/toolkit'
 import { configureStore } from '@reduxjs/toolkit'
 
-import { logMiddleware } from './middleware.log'
+import { logMiddleware } from './middleware.log.js'
 import type { RootState } from './reducer.root'
-import { defaultState, rootReducer } from './reducer.root'
+import { defaultState, rootReducer } from './reducer.root.js'
 
 type TypedMiddleware = Middleware<
   // Legacy type parameter added to satisfy interface signature

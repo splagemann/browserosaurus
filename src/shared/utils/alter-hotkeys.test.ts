@@ -1,6 +1,6 @@
 import type { AppId } from '../../config/apps'
 import type { Hotkeys } from '../state/reducer.storage'
-import { alterHotkeys } from './alter-hotkeys'
+import { alterHotkeys } from './alter-hotkeys.js'
 
 const cases: [Hotkeys, AppId, string, Hotkeys][] = [
   // Add Safari to empty hotkeys

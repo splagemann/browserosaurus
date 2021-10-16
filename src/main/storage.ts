@@ -3,7 +3,7 @@ import { JSONFileSync, LowSync } from 'lowdb'
 import path from 'path'
 
 import type { Storage } from '../shared/state/reducer.storage'
-import { defaultStorage } from '../shared/state/reducer.storage'
+import { defaultStorage } from '../shared/state/reducer.storage.js'
 
 const keys = Object.keys as <T>(o: T) => Extract<keyof T, string>[]
 

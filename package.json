@@ -14,6 +14,7 @@
   "repository": "https://github.com/will-stone/browserosaurus",
   "license": "MIT",
   "author": "Will Stone",
+  "type": "module",
   "main": ".webpack/main",
   "scripts": {
     "doctor": "npm run lint && npm run typecheck && npm run test",
@@ -222,13 +223,14 @@
     "postcss-import": "^14.0.2",
     "postcss-loader": "^6.1.1",
     "prettier": "^2.4.1",
+    "resolve-typescript-plugin": "^1.1.1",
     "rimraf": "^3.0.2",
     "style-loader": "^3.3.0",
     "tailwindcss": "^2.2.16",
     "ts-jest": "^27.0.5",
     "ts-loader": "^9.2.6",
     "ts-node": "^10.2.1",
-    "typescript": "^4.4.3",
+    "typescript": "^4.5.0-beta",
     "url-loader": "^4.1.1",
     "version-bump-prompt": "^6.1.0"
   },

@@ -2,7 +2,7 @@ import { createReducer } from '@reduxjs/toolkit'
 import xor from 'lodash/xor'
 
 import type { AppId } from '../../config/apps'
-import { alterHotkeys } from '../utils/alter-hotkeys'
+import { alterHotkeys } from '../utils/alter-hotkeys.js'
 import {
   changedHotkey,
   clickedDonate,
@@ -11,7 +11,7 @@ import {
   clickedMaybeLater,
   syncStorage,
   tWindowBoundsChanged,
-} from './actions'
+} from './actions.js'
 
 export type Hotkeys = Record<string, AppId>
 

@@ -1,7 +1,7 @@
 import { createReducer } from '@reduxjs/toolkit'
 
-import { CARROT_URL } from '../../config/CONSTANTS'
-import { backspaceUrlParse } from '../utils/backspace-url-parse'
+import { CARROT_URL } from '../../config/CONSTANTS.js'
+import { backspaceUrlParse } from '../utils/backspace-url-parse.js'
 import {
   clickedDonate,
   clickedTabButton,
@@ -17,7 +17,7 @@ import {
   updateDownloaded,
   updateDownloading,
   urlOpened,
-} from './actions'
+} from './actions.js'
 
 export type PrefsTab = 'about' | 'general' | 'tiles'
 

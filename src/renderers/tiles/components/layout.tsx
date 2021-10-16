@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 
-import { tilesStarted } from '../../../shared/state/actions'
-import { useKeyboardEvents } from './hooks/use-keyboard-events'
-import SupportMessage from './organisms/support-message'
-import Tiles from './organisms/tiles'
-import UrlBar from './organisms/url-bar'
+import { tilesStarted } from '../../../shared/state/actions.js'
+import { useKeyboardEvents } from './hooks/use-keyboard-events.js'
+import SupportMessage from './organisms/support-message.js'
+import Tiles from './organisms/tiles.js'
+import UrlBar from './organisms/url-bar.js'
 
 const useAppStarted = () => {
   const dispatch = useDispatch()

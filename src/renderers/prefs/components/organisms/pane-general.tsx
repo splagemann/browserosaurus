@@ -6,10 +6,10 @@ import {
   clickedSetAsDefaultBrowserButton,
   clickedUpdateButton,
   clickedUpdateRestartButton,
-} from '../../../../shared/state/actions'
-import { useSelector } from '../../../../shared/state/hooks'
-import Button from '../../../shared/components/atoms/button'
-import { Pane } from '../molecules/pane'
+} from '../../../../shared/state/actions.js'
+import { useSelector } from '../../../../shared/state/hooks.js'
+import Button from '../../../shared/components/atoms/button.js'
+import { Pane } from '../molecules/pane.js'
 
 interface RowProps {
   children: React.ReactNode

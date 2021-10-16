@@ -3,18 +3,18 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import Url from 'url'
 
-import { CARROT_URL } from '../../../../config/CONSTANTS'
+import { CARROT_URL } from '../../../../config/CONSTANTS.js'
 import {
   clickedCopyButton,
   clickedUpdateAvailableButton,
   clickedUrlBackspaceButton,
-} from '../../../../shared/state/actions'
-import { useSelector } from '../../../../shared/state/hooks'
-import Button from '../../../shared/components/atoms/button'
+} from '../../../../shared/state/actions.js'
+import { useSelector } from '../../../../shared/state/hooks.js'
+import Button from '../../../shared/components/atoms/button.js'
 import {
   BackspaceIcon,
   ClipboardCopyIcon,
-} from '../../../shared/components/atoms/icons'
+} from '../../../shared/components/atoms/icons.js'
 
 interface Props {
   className?: string

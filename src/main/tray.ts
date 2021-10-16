@@ -1,7 +1,7 @@
 import { app, Menu, Tray } from 'electron'
 import path from 'path'
 
-import { pWindow, showTWindow } from './windows'
+import { pWindow, showTWindow } from './windows.js'
 
 export let tray: Tray | undefined
 

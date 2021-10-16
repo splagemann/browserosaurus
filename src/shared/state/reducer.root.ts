@@ -1,9 +1,9 @@
 import type { AnyAction, ThunkAction } from '@reduxjs/toolkit'
 import { combineReducers } from '@reduxjs/toolkit'
 
-import { appIds, defaultAppIds } from './reducer.app-ids'
-import { data, defaultData } from './reducer.data'
-import { defaultStorage, storage } from './reducer.storage'
+import { appIds, defaultAppIds } from './reducer.app-ids.js'
+import { data, defaultData } from './reducer.data.js'
+import { defaultStorage, storage } from './reducer.storage.js'
 
 export const rootReducer = combineReducers({ data, storage, appIds })
 
